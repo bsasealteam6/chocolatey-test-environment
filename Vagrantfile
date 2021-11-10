@@ -22,9 +22,9 @@ Vagrant.configure("2") do |config|
     # Show the GUI
     v.gui = true
     # 4GB RAM
-    v.customize ["modifyvm", :id, "--memory", "4096"]
+    v.customize ["modifyvm", :id, "--memory", "6144"]
     # 2 CPUs
-    v.customize ["modifyvm", :id, "--cpus", "2"]
+    v.customize ["modifyvm", :id, "--cpus", "4"]
     # Video RAM is 32 MB
     v.customize ["modifyvm", :id, "--vram", 32]
     # For better DNS resolution
